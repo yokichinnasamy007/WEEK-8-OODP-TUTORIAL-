@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+template <typename T>
+void findMax(T a, T b) {
+    cout << (a > b ? a : b) << endl;
+}
+
+int main() {
+    int a = 7, b = 3;
+    float x = 4.5f, y = 9.2f;
+    double p = 15.67, q = 15.66;
+
+    findMax(a, b);
+    findMax(x, y);
+    findMax(p, q);
+
+    return 0;
+}
